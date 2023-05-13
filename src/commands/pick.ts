@@ -178,12 +178,6 @@ export class Pick implements Command {
                     description: "指定したメンバーから抽出",
                     options: [
                         {
-                            type: "INTEGER",
-                            name: "count",
-                            description: "抽出する個数",
-                            minValue: 1,
-                        }, 
-                        {
                             type: "USER",
                             name: "target-0",
                             description: "対象メンバー",
@@ -209,6 +203,12 @@ export class Pick implements Command {
                             name: "target-4",
                             description: "対象メンバー",
                         },
+                        {
+                            type: "INTEGER",
+                            name: "count",
+                            description: "抽出する個数",
+                            minValue: 1,
+                        }, 
                     ]
                 },
                 {
@@ -217,12 +217,6 @@ export class Pick implements Command {
                     description: "入力した要素から抽出",
                     options: [
                         {
-                            type: "INTEGER",
-                            name: "count",
-                            description: "抽出する個数",
-                            minValue: 1,
-                        }, 
-                        {
                             type: "STRING",
                             name: "target-0",
                             description: "要素名",
@@ -248,6 +242,12 @@ export class Pick implements Command {
                             name: "target-4",
                             description: "要素名",
                         },
+                        {
+                            type: "INTEGER",
+                            name: "count",
+                            description: "抽出する個数",
+                            minValue: 1,
+                        }, 
                     ]
                 }
 
